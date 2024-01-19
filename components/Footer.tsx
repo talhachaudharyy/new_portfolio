@@ -1,15 +1,18 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row items-center justify-between p-4 mb-10 bg-transparent text-gray-800">
       {/* Left side with an image */}
       <div className="flex items-center mb-4 md:mb-0">
-        <img
+        <Image
+        width={60}
+        height={60}
           src="/picofme.png"  
           alt="Logo"
-          className="w-20 h-20 mr-2 ml-10 rounded-full"
+          className=" mr-2 ml-10 rounded-full"
         />
       </div>
       

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -20,10 +21,12 @@ export default function Example() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
+              width={40}
+              height={40}
                 src="/picofme.png"  
                 alt="Logo"
-                className="w-10 h-10 mr-2 ml-10 rounded-full"
+                className=" mr-2 ml-10 rounded-full"
               />
             </a>
           </div>
@@ -68,10 +71,12 @@ export default function Example() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
+                width={40}
+                height={40}
                   src="/picofme.png"  
                   alt="Logo"
-                  className="w-10 h-10 mr-2 ml-10 rounded-full"
+                  className=" mr-2 ml-10 rounded-full"
                 />
               </a>
               <button
@@ -140,7 +145,7 @@ export default function Example() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Hi, There.
             <br />
-            <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I'm Talha, a Full Stack Developer.</span>
+            <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">I&apos;m Talha, a Full Stack Developer.</span>
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">

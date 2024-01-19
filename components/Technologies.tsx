@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const Technologies = () => {
   const technologyImages = [
@@ -56,12 +57,14 @@ const Technologies = () => {
     <div className="text-center">
       <h2 className="text-4xl font-bold mb-4 text-gray-800">My Tech Stack</h2>
       <p className="text-lg mb-8 text-gray-600">
-        Technologies I've been working with recently
+        Technologies I&apos;ve been working with recently
       </p>
 
       <Slider {...sliderSettings} className="mx-auto max-w-screen-lg">
         {technologyImages.map((imageUrl, index) => (
-          <img
+          <Image
+          width={20}
+          height={20}
             key={index}
             src={imageUrl}
             alt={`Technology ${index + 1}`}

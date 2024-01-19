@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import Image from 'next/image';
 
 
 const Projects = () => {
@@ -67,11 +68,13 @@ const Projects = () => {
         {projects.map((project) => (
           <div key={project.id} className="max-w-sm bg-white rounded-lg  shadow-2xl  shadow-gray-400  overflow-hidden mx-auto">
 
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover "
-            />
+              <Image
+                width={300}  
+                height={200} 
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
             <div className="text-left  p-4">
             <div className='flex flex-row justify-between mb-2'>
             <h3 className="mb-2 text-xl font-bold  text-gray-900 ">{project.title}</h3>
