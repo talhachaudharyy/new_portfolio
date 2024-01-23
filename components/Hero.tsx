@@ -153,7 +153,7 @@ export default function Example() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
               target='_blank'
-                href="https://drive.google.com/file/d/1MGuhZ7DvZIy9u5NgbEpv-d2kUfA3z7VZ/view?usp=sharing"
+                href="https://docs.google.com/document/d/1sFXgBooUSJ4uZZQ6zShP-wMWgkcSnwtB2-20NEP9Grw/edit?usp=sharing"
                 className="rounded-md bg-indigo-600 px-3.5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 My Resume
